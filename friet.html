@@ -3,41 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chips Ratings</title>
+    <title>Friet Ratings</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
 </head>
 <body>
     <nav>
         <ul>
-            <!-- <li><a href="index.html"></a></li> -->
-            <li><a href="index.html"><img src="img/other/navbar_aardappel.png"></a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="chips.html">Chips</a></li>
             <li><a href="friet.html">Friet</a></li>
         </ul>
     </nav>
-    <h1>Chips Ratings</h1>
+    <h1>Friet Ratings</h1>
     <div class="info-box">
-        <p>Explore and rate different chips from various brands and tastes. Use the filters to find your favorites!</p>
+        <p>Discover the best frituurs and their friet across different cities. Use the filters to explore ratings and comments!</p>
     </div>
     <div class="filter-container">
-        <label for="brandFilter">Filter by Brand:</label>
-        <select id="brandFilter">
+        <label for="locationFilter">Filter by Stad/Dorp:</label>
+        <select id="locationFilter">
             <option value="">All</option>
         </select>
-    
-        <label for="tasteFilter">Filter by Taste:</label>
-        <select id="tasteFilter">
-            <option value="">All</option>
-        </select>
-    </div>    
+    </div>
 
-    <table id="chipsTable" class="display" style="width:100%">
+    <table id="frietTable" class="display" style="width:100%">
         <thead>
             <tr>
-                <!-- <th>Name</th> -->
-                <th>Brand</th>
-                <th>Taste</th>
+                <th>Frituur</th>
+                <th>Stad/Dorp</th>
                 <th>Date</th>
                 <th>Picture</th>
                 <th>Rating</th>
@@ -52,6 +45,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.1/papaparse.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="scripts-friet.js"></script>
 </body>
 </html>
